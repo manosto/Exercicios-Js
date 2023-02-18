@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="./colors.css" rel="stylesheet" />
+    <title>Cadastro da Liga dos astronautas</title>
+  </head>
+  <body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action="">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <label for="pass">- Password</label>
+      <input type="password" id="pass" name="pass" />
+      <br />
+      <br />
+      <label for="date">Data de nascimento</label>
+      <input type="date" id="date" name="date" />
+      <label for="file">- Foto</label>
+      <input type="file" id="file" name="file" />
+      <br />
+      <br />
+      <label for="nacionalidade">Nacionalidade</label>
+      <input list="nacionalidade" />
+      <datalist id="nacionalidade">
+        <option value="Russa">Russa</option>
+        <option value="Americana">Americana</option>
+        <option value="Brasileira">Brasileira</option>
+      </datalist>
+      <label for="genero">Genero:</label>
+      <label for="feminino">F</label>
+      <input type="radio" id="feminino" name="genero" value="F" />
+      <label for="masculino">M</label>
+      <input type="radio" id="masculino" name="genero" value="M" />
+      <br />
+      <br />
+      <label for="qualidades">Suas principais qualidades</label>
+      <br />
+      <label for="ingeligencia">Inteligência</label>
+      <input type="checkbox" id="ingeligencia" name="ingeligencia" />
+      <label for="Resiliência">| Resiliência</label>
+      <input type="checkbox" id="Resiliência" name="Resiliência" />
+      <label for="Preparo físico">| Preparo físico</label>
+      <input type="checkbox" id="Preparofísico" name="Preparofísico" />
+      <label for="Educação">| Educação</label>
+      <input type="checkbox" id="Educação" name="Educação" />
+      <br />
+      <br />
+      <textarea
+        name="questao"
+        id="questao"
+        cols="30"
+        rows="10"
+        placeholder="Porque voce gostaria de ser um austronauta?"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Criar" />
+    </form>
+  </body>
+</html>
